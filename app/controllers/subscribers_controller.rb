@@ -10,7 +10,7 @@ class SubscribersController < ApplicationController
     @subscriber.js = params[:request][:js]
     @subscriber.react = params[:request][:react]
     if @subscriber.save
-        return render plain: "saved name #{@subscriber.react}"
+        return render plain: "Success"
     else
         return render plain: "failed"
     end
